@@ -54,8 +54,7 @@ class VenueCard extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
-
+    const { classes, data } = this.props;
     return (
       <Card className={classes.card}>
         <CardHeader
@@ -69,18 +68,17 @@ class VenueCard extends React.Component {
               <MoreVertIcon />
             </IconButton>
           }
-          title="Sân bóng đá mini Chuyên Việt Đà Nẵng"
+          title={data.name}
           subheader="September 14, 2018"
         />
         <CardMedia
           className={classes.media}
-          image="/static/img/chuyenviet.jpg"
+          image="/static/img/field/chuyenviet.jpg"
           title="San Chuyen Viet"
         />
         <CardContent>
           <Typography component="p">
-            Sân bóng đá mini Chuyên Việt Đà Nẵng nằm trong trung tâm thể dục thể thao Quốc Phòng 3, Tiểu La, Quận Hải Châu, Thành phố Đà Nẵng. Số lượng sân nhiều chất lượng mặt sân và đèn chiếu sáng khá tốt. Nhân viên phục vụ khá nhiệt tình.
-            Là một địa điểm được nhiều anh em chơi bóng tại Đà Nẵng lựa chọn để tổ chức các giải đấu phong trào.
+            {data.desc}
           </Typography>
         </CardContent>
         <CardActions className={classes.actions} disableActionSpacing>
