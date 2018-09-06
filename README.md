@@ -1,4 +1,4 @@
-This is a personal boilerplate using [Next.js + Material.UI (React) + Express + MongoDB]
+This is a personal boilerplate using [Next.js + MaterialUI (React) + Express + MongoDB]
 
 This project was bootstrapped with [Create Next App](https://github.com/segmentio/create-next-app).
 
